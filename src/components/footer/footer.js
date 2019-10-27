@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./footer.css";
 import "../../App.js";
-import { Link } from "react-router-dom";
-import TokenComponent from '../../api/TokenComponent';
+
 
 function Footer() {
 

@@ -1,6 +1,5 @@
 import axios from 'axios';
-import TokenComponent from './TokenComponent';
-const DETAULT_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8333';
+const DETAULT_URL = process.env.REACT_APP_BACKEND_URL || 'https://trading-backend.sam-corp.me/';
 
 export const handleError = (e) => {
     if (e.response) return e.response.data.errors.detail;

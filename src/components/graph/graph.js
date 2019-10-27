@@ -2,21 +2,19 @@ import React from 'react';
 
 
 import io from 'socket.io-client';
-import Rickshaw from 'rickshaw';
-import 'rickshaw/rickshaw.min.css';
 import './graph.css';
 import {
-    LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+    LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
 } from 'recharts';
 import TokenComponent from '../../api/TokenComponent';
 import { post } from '../../api/post';
 import { postMoney } from '../../api/post';
 // import { Redirect } from 'react-router/cjs/react-router.min';
-import {  Redirect } from 'react-router';
 
 
 
-let socket = io.connect("http://localhost:3000");
+// eslint-disable-next-line
+let socket = io.connect("https://trading-backend.sam-corp.me/");
 
 function Graph(props) {
     const [stock, setStock] = React.useState([]);

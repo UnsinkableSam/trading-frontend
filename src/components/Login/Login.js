@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Login.css";
-import { Route, Redirect } from 'react-router';
+import { Link, Redirect } from 'react-router';
 import { post } from '../../api/post';
 import TokenComponent from '../../api/TokenComponent';
 function Login() {
@@ -55,9 +55,7 @@ function Login() {
 
 
                     <div id="formFooter">
-                        <a class="underlineHover" href="#">Forgot Password?</a>
-                        <br></br>
-                        <a class="underlineHover" href="#">Register</a>
+                        <Link id="home" class="nav-link" to="/Register"> <span class="sr-only">Register</span></Link>
                     </div>
 
                 </div>

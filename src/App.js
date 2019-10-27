@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/footer/footer";
@@ -8,7 +7,7 @@ import Logout from "./components/Logout/Logout";
 import Register from "./components/Register/Register";
 import Stocks from "./components/Stocks/Stocks";
 import Account from "./components/Account/Account";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import TokenComponent from './api/TokenComponent';
 import graph from './components/graph/graph';
 

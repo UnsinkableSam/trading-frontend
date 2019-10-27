@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Register.css";
 import {post} from '../../api/post';
-
+import { Link } from 'react-router';
 
 function Register() {
     const [form, setForm] = React.useState({
@@ -42,7 +42,7 @@ function Register() {
 
 
                     <div id="formFooter">
-                        <a class="underlineHover" href="#">Login</a>
+                        <Link id="login" class="nav-link" to="/Login"> <span class="sr-only">Login</span></Link>
                     </div>
 
                 </div>

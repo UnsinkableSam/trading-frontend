@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router';
-import { post } from '../../api/post';
+import { Redirect } from 'react-router';
 import TokenComponent from '../../api/TokenComponent';
 function Logout() {
 
