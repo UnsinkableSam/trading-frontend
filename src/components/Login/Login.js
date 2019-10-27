@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Login.css";
-import { Link, Redirect } from 'react-router';
+import { Redirect } from 'react-router';
+import { Link } from "react-router-dom";
 import { post } from '../../api/post';
 import TokenComponent from '../../api/TokenComponent';
 function Login() {
