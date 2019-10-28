@@ -114,7 +114,7 @@ function Graph(props) {
     });
         
     
-    }, [])
+    }, [name])
     
    React.useEffect(() => {
     //    getCurrentMoney();
