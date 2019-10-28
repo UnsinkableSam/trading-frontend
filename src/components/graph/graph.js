@@ -92,7 +92,7 @@ function Graph(props) {
         // getCurrentMoney();
         // sharesUpdate();
 
-        let socket = io.connect("http://localhost:8333");
+        let socket = io.connect("https://trading-backend.sam-corp.me/");
  
         socket.on('connect', () => {
         

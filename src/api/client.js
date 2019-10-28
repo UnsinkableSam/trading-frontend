@@ -11,7 +11,7 @@ export const handleError = e => {
 };
 
 const Api = ({
-    "apiUrl": process.env.REACT_APP_BACKEND_URL || 'http://localhost:8333',
+    "apiUrl": process.env.REACT_APP_BACKEND_URL || 'https://trading-backend.sam-corp.me/',
     "header": { 'Content-Type': 'application/json; charset=utf-8' },
 })
 
