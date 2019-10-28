@@ -131,7 +131,7 @@ function Graph(props) {
     return (
         <div>
             
-            <h1> {name} </h1>
+            <h1 className="Name"> {name} </h1>
             <h4>Account Money {moneyApi}</h4>
             <h4> Current shares owned {stocks}</h4>
             <div className="graphDiv">
