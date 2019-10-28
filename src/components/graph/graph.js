@@ -100,7 +100,7 @@ function Graph(props) {
         socket.on('stocks', (message) => {
             message.forEach(element => {
                 if (name === element.name) {
-                    let msg = { name: element.time, uv: element.startingPoint };
+                    let msg = { name: element.time, price: element.startingPoint };
                     setStock(stock => ([...stock, msg]));
                     
                     setForm(form => ({ ...form, "stock": element.name }));
@@ -141,7 +141,7 @@ function Graph(props) {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <Line connectNulls={true} type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
+                <Line connectNulls={true} type='monotone' dataKey='price' stroke='#8884d8' fill='#8884d8' />
             </LineChart>
             </div>
             <div>
