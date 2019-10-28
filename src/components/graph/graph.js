@@ -144,7 +144,7 @@ function Graph(props) {
                 <Line connectNulls={true} type='monotone' dataKey='price' stroke='#8884d8' fill='#8884d8' />
             </LineChart>
             </div>
-            <div>
+            <div className="buysellButtons">
                 <form>
                     <p >Need enough money and can't be "-1"</p>
                     <input type="number" id="amount" onChange={handleChange} value={form.amount} class="fadeIn second" name="amount" placeholder="Amount" />

@@ -260,3 +260,10 @@ input[type=text]:placeholder {
 #icon {
   width:60%;
 }
+
+
+@media screen and (min-width: 480px) {
+  input[type=button], input[type=submit], input[type=reset] {
+    padding: 15px 50px !important;
+  }
+}
