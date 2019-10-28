@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Register.css";
 import {post} from '../../api/post';
-import { Link } from 'react-router';
+import { Link } from "react-router-dom";
 
 function Register() {
     const [form, setForm] = React.useState({
