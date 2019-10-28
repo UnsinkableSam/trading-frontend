@@ -3,7 +3,7 @@ import "./Register.css";
 import {post} from '../../api/post';
 import { Link } from "react-router-dom";
 
-function Register() {
+function Register(props) {
     const [form, setForm] = React.useState({
         password: '',
         login: '',
@@ -21,6 +21,7 @@ function Register() {
     const handleSubmit = (e) => {
         e.preventDefault();
         post(form, '/register', 'post');
+        props.history.push('/');
     }
     return (
         <div className="Register">
