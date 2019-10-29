@@ -18,7 +18,7 @@ let browser;
 //     });
 // }
 // Test Suite
-test.describe("Multipage", function () {
+test.describe("Check index page", function () {
 
     test.beforeEach(function (done) {
         this.timeout(20000);
@@ -35,7 +35,7 @@ test.describe("Multipage", function () {
     });
 
     // Test case
-    test.it("Test index", function (done) {
+    test.it("Check elements on index", function (done) {
         // Check correct title
         // browser.getTitle().then(function (title) {
         //     assert.equal(title, "Multipage");
@@ -44,7 +44,7 @@ test.describe("Multipage", function () {
         // Check correct heading
         browser.findElement(By.css("h1")).then(function (element) {
             element.getText().then(function (text) {
-                assert.equal(text, "Home Page");
+                assert.equal(text, "Investment");
             });
         });
 
@@ -60,19 +60,7 @@ test.describe("Multipage", function () {
 
     test.it("Login", function (done) {
         browser.get("http://localhost:3000/login");
-        // Use nav link to go to home page
-        // browser.findElement(By.linkText("Home")).then(function (element) {
-        //     element.click();
-        // });
-
-        // Check correct heading
-        // browser.findElement(By.css("h1")).then(function (element) {
-        //     element.getText().then(function (text) {
-        //         assert.equal(text, "Home");
-        //     });
-        // });
-
-        // login name
+       
         browser.findElement(By.css("h2")).then(function (element) {
             element.getText().then(function (text) {
                 assert.equal(text, "LOGIN");
@@ -90,19 +78,19 @@ test.describe("Multipage", function () {
 
 
 
-    test.it("Login title", function (done) {
-        browser.get("http://localhost:3000/login");
+    // test.it("Login title", function (done) {
+    //     browser.get("http://localhost:3000/login");
         
-        // login title name
-        browser.findElement(By.css("h2")).then(function (element) {
-            element.getText().then(function (text) {
-                assert.equal(text, "LOGIN");
-            });
-        });
+    //     // login title name
+    //     browser.findElement(By.css("h2")).then(function (element) {
+    //         element.getText().then(function (text) {
+    //             assert.equal(text, "LOGIN");
+    //         });
+    //     });
 
 
-        done();
-    });
+    //     done();
+    // });
 
 
     test.it("Login input", function (done) {

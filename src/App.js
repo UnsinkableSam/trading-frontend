@@ -40,7 +40,13 @@ function App() {
 
 const Home = () => (
   <div>
-    <h1>Home Page</h1>
+    <h1>Investment</h1>
+    <p>Secure investments are real
+in our company!
+
+Our expertise helps us in effective investment management.   </p>
+    <p>We maximize profits while minimizing risks – thus, every investment brings income.</p>
+    <p> Just try right now and see for yourself!</p>
   </div>
 );
 
